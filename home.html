@@ -1,0 +1,105 @@
+  <head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+    <style>
+      h1 {
+        color: black;
+        font-size: 30px;
+        margin: 0px;
+        background-color: green;
+      }
+      ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: greenyellow;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px; /* this line */
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* li a:hover {
+
+} */
+* {
+  box-sizing: border-box;
+}
+.indent-1 {
+display:flex;
+background-color: greenyellow;
+}
+.section.left {
+  margin:0;
+  padding:100px;
+  float:left;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  
+}
+.section.right {
+  padding:50px;
+  float:right;
+  margin-right: 100px;
+  margin-left: 500px;
+}
+.section.below {
+  float: down;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 160px; /* this line */
+}
+  
+    </style>
+    <h1> BIRDWATCHING </h1>
+    <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+   
+  </head>
+  <!-- I included the body element below which is not part of the html version or the head to make
+    make sure you include it above your HTML code -->
+  <body>
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#start">Get Started</a></li>
+  <li><a href="#photos">Photos</a></li>
+  <li><a href="#gear">Gear</a></li>
+  <li><a href="#forum">Forum</a></li>
+</ul>
+<section class="indent-1">
+  <!--Section 1-->
+  <section class="left">
+    <div><h2>Welcome</h2></div>
+    <div><p>Welcome to our fave birdwatching site. If this were a real site, it would be the ideal place to come to learn more about birdwathcing, whether you are a beginner looking to learn how to get into birding or an expert wanting to share ideas, tips, and photos with other like minded people.</p></div>
+    <div><p> So do not waste time! Get what you need, turn off that computer and get out and enjoy nature!</p></div>
+  </section>
+
+  <!--Section 2-->
+  <section class="right">
+    <div><h3>Favorite Photos</h3></div> 
+    <div><p> <img src="picture.jpg" alt="Alex Rider StormBreaker" class="center"></p></div>
+  </section>
+</section>
+  <!--Section 3-->
+  <section class="indent-1">
+    <section class="below">
+      <p>This fave website example is CC0 - any part of this code may be reused in any way you wish </p>
+    </section>
+  </section>
+ </body>
+</html>
