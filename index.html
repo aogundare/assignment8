@@ -14,7 +14,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: greenyellow;
+  background-color: rgba(0, 255, 0, 0.5);  padding: 1%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px; /* this line */
@@ -35,34 +35,42 @@ li a {
 /* li a:hover {
 
 } */
-* {
-  box-sizing: border-box;
+
+.indent-1 
+{
+  display:flex;
+  background-color:  rgba(0, 255, 0, 0.5); 
+   padding: 1%;
+  /* border: 3px solid red;
+  position: absolute;
+  margin-right: 25px;
+  left: 5px;
+  top: 5px;
+  bottom: 5px;
+  right: 70%; */
 }
-.indent-1 {
-display:flex;
-background-color: greenyellow;
-}
-.section.left {
-  margin:0;
-  padding:100px;
-  float:left;
-  margin-left: 30px;
-  margin-bottom: 30px;
-  
+.indent-2
+{
+  display:flex;
+  background-color: rgba(0, 255, 0, 0.5);  
+  padding: 1%;
+  /* position: absolute;
+  right: 5px;
+  top: 5px;
+  bottom: 5px;
+  left: 30%;
+  margin-left: 25px; */
 }
 .section.right {
   padding:50px;
   float:right;
-  margin-right: 100px;
-  margin-left: 500px;
+  margin: 25px;
 }
 .section.below {
-  float: down;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 160px; /* this line */
+  float: bottom;
+  margin-top: 1325px;
+  background-color: blue;
 }
-  
     </style>
     <h1> BIRDWATCHING </h1>
     <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
@@ -81,25 +89,25 @@ background-color: greenyellow;
   <li><a href="#gear">Gear</a></li>
   <li><a href="#forum">Forum</a></li>
 </ul>
-<section class="indent-1">
+<div class="indent-1">
   <!--Section 1-->
-  <section class="left">
+  <section id="left">
     <div><h2>Welcome</h2></div>
     <div><p>Welcome to our fave birdwatching site. If this were a real site, it would be the ideal place to come to learn more about birdwathcing, whether you are a beginner looking to learn how to get into birding or an expert wanting to share ideas, tips, and photos with other like minded people.</p></div>
     <div><p> So do not waste time! Get what you need, turn off that computer and get out and enjoy nature!</p></div>
   </section>
-
   <!--Section 2-->
-  <section class="right">
+  <section id ="right">
     <div><h3>Favorite Photos</h3></div> 
     <div><p> <img src="picture.jpg" alt="Alex Rider StormBreaker" class="center"></p></div>
   </section>
-</section>
-  <!--Section 3-->
-  <section class="indent-1">
-    <section class="below">
-      <p>This fave website example is CC0 - any part of this code may be reused in any way you wish </p>
-    </section>
-  </section>
+</div>
+  <div class = "indent-2">
+    <footer>
+      <p>
+        This fave website example is CC0 - any part of this code may be reused in any way you wish.
+      </p>
+    </footer>
+  </div>
  </body>
 </html>
